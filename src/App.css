@@ -176,7 +176,3 @@ input[type="number"] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
-
-.hint {
-  margin: 10px 0;
-}
