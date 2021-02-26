@@ -19,7 +19,7 @@ export const AccountSummary = () => {
             </div>
             <div>
                 <h4>Expense</h4>
-                <p className="money minus">${expenseAmount(-1)}</p>
+                <p className="money minus">${expenseAmount*(-1)}</p>
             </div>
         </div>
     )
