@@ -8,8 +8,7 @@ export const AccountSummary = () => {
         .reduce((total, amount) => (total += amount), 0)
         .toFixed(2);
     const expenseAmount = amounts.filter(amount => amount < 0)
-        .reduce((total, amount) => (total += amount), 0) * (-1)
-        .toFixed(2);
+        .reduce((total, amount) => (total += amount), 0) * (-1);
 
     return (
         <div className="inc-exp-container">
@@ -19,7 +18,7 @@ export const AccountSummary = () => {
             </div>
             <div>
                 <h4>Expense</h4>
-                <p className="money minus">${expenseAmount}</p>
+                <p className="money minus">${expenseAmount.toFixed(2)}</p>
             </div>
         </div>
     )
